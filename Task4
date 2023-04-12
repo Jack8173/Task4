@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Task3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int age;
+            string name;
+            string zodiacSign;
+            string job;
+            
+            Console.WriteLine("Как Вас зовут?: ");
+                name = Console.ReadLine();
+
+            Console.WriteLine("Сколько Вам лет?: ");
+                age = Convert.ToByte( Console.ReadLine());
+
+            Console.WriteLine("Где вы рабаете?: ");
+                job = Console.ReadLine();
+
+            Console.WriteLine("Какой у Вас знак зодиака?: ");
+                zodiacSign = Console.ReadLine();
+
+            Console.WriteLine($"Ваше имя {name}, Вам {age} год, Вы {zodiacSign}, работаете на {job}. ");
+        }
+    }
+}
